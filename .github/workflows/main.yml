@@ -36,4 +36,4 @@ jobs:
 
       - name: Run Docker image
         run: |
-          docker run -d --name testcicd_container -p 3600:8080 jnims867/testcicd:latest
+          docker run -d -p 3600:8080 jnims867/testcicd:latest
