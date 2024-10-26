@@ -24,7 +24,11 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t jnims867/testcicd:latest .
+          docker build -t testcicd:latest .
+
+      - name: Tag Docker image
+        run: |
+          docker tag testcicd:latest jnims867/testcicd:latest
 
       - name: Push Docker image to Docker Hub
         run: |
